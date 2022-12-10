@@ -1,0 +1,21 @@
+
+layout:
+    title: "Spravování zaměstnanců"
+    change_language: "EN"
+
+employee:
+    name: "Jméno"
+    nameRequired: "Zadejte prosím jméno zaměstnance"
+    sex: "Pohlaví"
+    sexReguired: "Zadejte prosím pohlaví zaměstnance"
+    age: "Věk"
+    ageReguired: "Zadejte prosím věk zaměstnance"
+    timeout: "Doba maximílního vyplnění formuláře vypčela"
+
+main:
+    title: "Seznam zaměstnanců"
+    edit: "Uložit změny"
+    delete: "Smazat"
+    add: "Přidat zaměstnance"
+    successfully_edited: "Změny byly úspěšně uloženy"
+    successfully_added: "Zaměstnanec byl úspěšně přidán"

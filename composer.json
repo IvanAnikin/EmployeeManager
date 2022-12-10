@@ -1,0 +1,48 @@
+{
+	"name": "Employee manager",
+	"description": "Platform for managing employees",
+	"homepage": "ivan-anikin.com",
+	"type": "project",
+	"authors": [
+		{
+			"name": "Ivan Anikin",
+			"homepage": "ivan-anikin.com",
+			"email": "ivan.anikin@outlook.com"
+		}
+	],
+	"require": {
+		"php": ">=7.2",
+		"nette/application": "^3.0",
+		"nette/bootstrap": "^3.0",
+		"nette/caching": "^3.0",
+		"nette/di": "^3.0",
+		"nette/finder": "^2.5",
+		"nette/forms": "^3.0",
+		"nette/http": "^3.0",
+		"nette/mail": "^3.1",
+		"nette/robot-loader": "^3.2",
+		"nette/safe-stream": "^2.3",
+		"nette/security": "^3.0",
+		"nette/utils": "^3.1",
+		"nette/database": "^3.1",
+		"latte/latte": "^2.5",
+		"tracy/tracy": "^2.7",
+		"dg/adminer-custom": "^1.6",
+		"nextras/orm": "^3.1",
+		"nextras/migrations": "^3.0",
+		"nextras/mail-panel": "^2.3",
+		"contributte/console": "^0.8.0",
+		"azuyalabs/yasumi": "v2.4.*",
+		"kucharovic/czech-holidays": "v2.0.0",
+		"kdyby/translation": "v3.0.5",
+		"ext-pdo": "*",
+		"ext-mysqli": "*",
+		"ext-simplexml": "*"
+	},
+	"require-dev": {
+		"nette/tester": "^2.3",
+		"phpstan/phpstan": "^0.12.0"
+	},
+	"minimum-stability": "stable"
+
+}

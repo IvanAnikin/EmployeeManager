@@ -1,0 +1,21 @@
+
+layout:
+    title: "Employee manager"
+    change_language: "CZ"
+
+employee:
+    name: "Name"
+    nameRequired: "Please enter the name of an employee"
+    sex: "Sex"
+    sexReguired: "Please enter the sex employee"
+    age: "Age"
+    ageReguired: "Please enter the age employee"
+    timeout: "The form has timed out"
+
+main:
+    title: "List of employees"
+    edit: "Save changes"
+    delete: "Delete"
+    add: "Add employee"
+    successfully_edited: "Changes were saved successfully"
+    successfully_added: "Employee was added successfully"

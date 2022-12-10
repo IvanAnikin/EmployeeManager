@@ -1,0 +1,36 @@
+{block content}
+
+    <div style="max-width: 100%">
+        <h3 class="first-element">{_website.main.title, NULL, [], NULL, $lang}:</h3>
+
+        <table class="table table-hover">
+            <tr id="first_row">
+                <th>{_website.employee.name, NULL, [], NULL, $lang}</th>
+                <th>{_website.employee.sex, NULL, [], NULL, $lang}</th>
+                <th>{_website.employee.age, NULL, [], NULL, $lang}</th>
+            </tr>
+
+            <tr>
+                <form n:name="newEmployeeForm">
+                    <td><div class="form-group"><input n:name="name" ></div></td>
+                    <td><div class="form-group"><input n:name="sex" ></div></td>
+                    <td><div class="form-group"><input n:name="age" ></div></td>
+                    <td><input type="submit" class="btn btn-info" value="{_website.main.add, NULL, [], NULL, $lang}" /></td>
+                </form>
+            </tr>
+
+            <tr n:foreach="$employees as $employee">
+
+                <form n:name="editEmployeeForm">
+                    <td><div class="form-group"><input n:name="name" value="{$employee->name}"></div></td>
+                    <td><div class="form-group"><input n:name="sex" value="{$employee->sex}"></div></td>
+                    <td><div class="form-group"><input n:name="age" value="{$employee->age}"></div></td>
+                    <td style="display:none"><div class="form-group"><input n:name="id" value="{$employee->id}"></div></td>
+                    <td><input type="submit" name="edit_button" class="btn btn-info" value="{_website.main.edit, NULL, [], NULL, $lang}" /></td>
+                    <td><input type="submit" name="delete_button"  class="btn btn-dark" value="{_website.main.delete, NULL, [], NULL, $lang}" /></td>
+                </form>
+            </tr>
+        </table>
+    </div>
+
+{/block}

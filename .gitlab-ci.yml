@@ -1,0 +1,13 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  image: ubuntu:18.04
+  only:
+    - production
+  before_script:
+    - apt-get update -qy
+    - apt-get install -y lftp
+  script:
+    - lftp -e "set ssl:verify-certificate no;open $FTP_HOST; user $FTP_USERNAME $FTP_PASSWORD; mirror --no-symlinks --exclude app/config/config.local.neon --exclude log/ --exclude .git/ --exclude stats/ --exclude /error --reverse --verbose --delete ./ ./web --parallel=10 --no-perm chmod -R 750 ./; bye"
